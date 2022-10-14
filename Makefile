@@ -3,32 +3,41 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: atiampae <marvin@42.fr>                    +#+  +:+       +#+         #
+#    By: jseo <jseo@student.42seoul.kr>             +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
-#    Created: 2022/08/30 12:24:43 by atiampae          #+#    #+#              #
-#    Updated: 2022/08/30 12:41:32 by atiampae         ###   ########.fr        #
+#    Created: 2020/12/22 14:44:25 by jseo              #+#    #+#              #
+#    Updated: 2022/10/14 22:20:32 by atiampae         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-NAME = libft.a
+NAME					= libft.a
 
-SRCS = ft_isalpha.c
+SRCS                    = ft_isalpha.c
 
-SRCSB = 
+#BNS_SRCS                =#
 
-OBJS := $(SRCS:.c=.o)
-OBJSB := $(SRCSB:.c=.o)
-all: $(NAME)
+OBJS					= $(SRCS:%.c=%.o)
 
-.c.o:
-	gcc -Wall -Wextra - Werror -c $< -o $(<:.c=.o)
+#BNS_OBJS				= $(BNS_SRCS:%#
 
-$(NAME): $(OBJS)
-	ar -rcs $(NAME) $(OBJS)
-bonus: $(NAME) $(OBJSB)
-	ar -rcs $(NAME) $(OBJSB)
-clean:
-	rm -f $(OBJS) $(OBJSB)
-fclean: clean 
-	rm -f $(NAME) $(bonus)
-re: fclean all
+FLAGS					= -Wall -Wextra -Werror
+
+$(NAME)		:	$(OBJS)
+			gcc $(FLAGS) -c $(SRCS) -I./
+			ar rc $(NAME) $(OBJS)
+
+all	:	$(NAME)
+
+bonus	:	$(NAME)
+		gcc $(FLAGS) -c $(BNS_SRCS) -I./
+		ar rc $(NAME) $(BNS_OBJS)
+
+clean	:
+		rm -f $(OBJS) $(BNS_OBJS)
+
+fclean	:	clean
+		rm -f $(NAME)
+
+re	:	fclean all
+
+.PHONY	:	all clean fclean re
