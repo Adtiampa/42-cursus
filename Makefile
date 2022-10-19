@@ -3,16 +3,16 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: jseo <jseo@student.42seoul.kr>             +#+  +:+       +#+         #
+#    By: atiampae <atiampae@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
-#    Created: 2020/12/22 14:44:25 by jseo              #+#    #+#              #
-#    Updated: 2022/10/15 00:26:05 by atiampae         ###   ########.fr        #
+#    Created: 2022/10/19 16:28:11 by atiampae          #+#    #+#              #
+#    Updated: 2022/10/19 19:42:36 by atiampae         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 NAME					= libft.a
 
-SRCS                    = ft_isalpha.c ft_isdigit.c ft_isalnum.c ft_isascii.c ft_isprint.c ft_toupper.c ft_tolower.c
+SRCS                    = ft_isalpha.c ft_isdigit.c ft_isalnum.c ft_isascii.c ft_isprint.c ft_toupper.c ft_tolower.c ft_strlen.c ft_strchr.c ft_strrchr.c
 
 #BNS_SRCS                =#
 
