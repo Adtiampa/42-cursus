@@ -6,13 +6,13 @@
 #    By: jseo <jseo@student.42seoul.kr>             +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2020/12/22 14:44:25 by jseo              #+#    #+#              #
-#    Updated: 2022/10/14 22:20:32 by atiampae         ###   ########.fr        #
+#    Updated: 2022/10/15 00:26:05 by atiampae         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 NAME					= libft.a
 
-SRCS                    = ft_isalpha.c
+SRCS                    = ft_isalpha.c ft_isdigit.c ft_isalnum.c ft_isascii.c ft_isprint.c ft_toupper.c ft_tolower.c
 
 #BNS_SRCS                =#
 
