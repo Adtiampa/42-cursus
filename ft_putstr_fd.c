@@ -6,7 +6,7 @@
 /*   By: atiampae <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/21 14:06:16 by atiampae          #+#    #+#             */
-/*   Updated: 2022/10/21 14:49:59 by atiampae         ###   ########.fr       */
+/*   Updated: 2022/10/21 16:05:25 by atiampae         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,5 +14,9 @@
 
 void	ft_putstr_fd(char *s, int fd)
 {
-
+	if (!s)
+	       return ;	
+	while (*s)
+	       ft_putchar_fd(*s++, fd);
+	return ;
 }

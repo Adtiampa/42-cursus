@@ -6,7 +6,7 @@
 /*   By: atiampae <atiampae@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/14 22:22:00 by atiampae          #+#    #+#             */
-/*   Updated: 2022/10/21 13:46:35 by atiampae         ###   ########.fr       */
+/*   Updated: 2022/10/21 16:07:10 by atiampae         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,5 +28,9 @@ char	*ft_strrchr(const char *s, int c);
 void	*ft_memset(void *b, int c, size_t len);
 void	ft_bzero(void *s, size_t n);
 void	*ft_calloc(size_t count, size_t size);
+void	ft_putchar_fd(char c, int fd);
+void	ft_putstr_fd(char *s, int fd);
+void	ft_putendl_fd(char *s, int fd);
+void	ft_putnbr_fd(int n, int fd);
 
 #endif
