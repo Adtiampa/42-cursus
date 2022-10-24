@@ -6,7 +6,7 @@
 /*   By: atiampae <atiampae@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/14 22:22:00 by atiampae          #+#    #+#             */
-/*   Updated: 2022/10/21 16:07:10 by atiampae         ###   ########.fr       */
+/*   Updated: 2022/10/23 22:51:25 by atiampae         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,5 +32,7 @@ void	ft_putchar_fd(char c, int fd);
 void	ft_putstr_fd(char *s, int fd);
 void	ft_putendl_fd(char *s, int fd);
 void	ft_putnbr_fd(int n, int fd);
+void 	*ft_memcpy(void *dst,const void *src,size_t n);
+char 	*ft_strjoin(char const *s1, char const *s2);
 
 #endif

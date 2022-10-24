@@ -6,13 +6,13 @@
 #    By: atiampae <atiampae@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/10/19 16:28:11 by atiampae          #+#    #+#              #
-#    Updated: 2022/10/21 16:05:07 by atiampae         ###   ########.fr        #
+#    Updated: 2022/10/23 22:48:42 by atiampae         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 NAME					= libft.a
 
-SRCS                    = ft_isalpha.c ft_isdigit.c ft_isalnum.c ft_isascii.c ft_isprint.c ft_toupper.c ft_tolower.c ft_strlen.c ft_strchr.c ft_strrchr.c ft_memset.c ft_bzero.c ft_calloc.c ft_putchar_fd.c ft_putstr_fd.c ft_putendl_fd.c ft_putnbr_fd.c
+SRCS                    = ft_isalpha.c ft_isdigit.c ft_isalnum.c ft_isascii.c ft_isprint.c ft_toupper.c ft_tolower.c ft_strlen.c ft_strchr.c ft_strrchr.c ft_memset.c ft_bzero.c ft_calloc.c ft_putchar_fd.c ft_putstr_fd.c ft_putendl_fd.c ft_putnbr_fd.c ft_memcpy.c ft_strjoin.c
 #BNS_SRCS                =#
 
 OBJS					= $(SRCS:%.c=%.o)
